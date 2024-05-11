@@ -14,7 +14,16 @@ working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('https://github.com/shubhamsahay2001/finalyear/blob/main/diabetes.csv', 'rb'))
+
+import urllib.request
+
+# URL of the file to be opened
+url = "https://github.com/shubhamsahay2001/finalyear/blob/main/diabetes.csv"
+
+# Open the URL and read its content
+with urllib.request.urlopen(url) as f:
+    diabetes_model = pickle.load(f)
+
 
 heart_disease_model = pickle.load(open('https://github.com/shubhamsahay2001/finalyear/blob/main/heart_disease_model.sav', 'rb'))
 
