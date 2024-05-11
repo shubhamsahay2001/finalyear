@@ -10,7 +10,7 @@ st.set_page_config(page_title="Health Assistant",
 
     
 # getting the working directory of the main.py
-working_dir = os.path.dirname(os.path.abspath(__file__))
+working_dir = os.path.dirname(os.path.abspath(https://github.com/shubhamsahay2001/finalyear))
 
 # loading the saved models
 
